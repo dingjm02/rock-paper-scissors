@@ -1,0 +1,58 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+
+
+import random
+
+computer = random.randint(0,2)
+resultlist = ["rock","paper","scissors"]
+AI = resultlist[computer]
+
+Yrchoice = input("What's your choice?\n")
+print(AI)
+if Yrchoice == "rock":
+  if AI == "paper":
+    print("You lose...")
+  elif AI == "rock":
+    print("Draw")
+  else:
+    print("You win!")
+if Yrchoice == "paper":
+  if AI == "paper":
+    print("Draw")
+  elif AI == "rock":
+    print("You win!")
+  else:
+    print("You lose...")
+if Yrchoice == "scissors":
+  if AI == "paper":
+    print("You win!")
+  elif AI == "rock":
+    print("You lose...!")
+  else:
+    print("Draw")
